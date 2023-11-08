@@ -26,7 +26,7 @@ const Home = () => {
         getTopRateMovies(topRateUrl);
     }, []);
 
-    return
+    return (
         <div className="container">
             <h2 className="title">Melhores Filmes:</h2>
             <div className="movies-container">
@@ -34,10 +34,7 @@ const Home = () => {
                 {topMovies.lenght > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/>)}
             </div>
         </div>
-
-    return (
-        <div>Home</div>
-    )
+    );
 };
 
 export default Home;
