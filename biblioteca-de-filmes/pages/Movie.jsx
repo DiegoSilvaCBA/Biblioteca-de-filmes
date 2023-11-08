@@ -12,6 +12,9 @@ import MovieCard from "../components/MovieCard";
 
 import "./Movie.css";
 
+const moviesURL = import.meta.env.VITE_API;
+const apiKey = import.meta.env.VITE_API_KEY;
+
 const Movie = () => {
     return (
         <div>Movie</div>
